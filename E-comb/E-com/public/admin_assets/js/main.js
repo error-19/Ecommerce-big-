@@ -10,7 +10,6 @@
       ctx.height = 130;
       var myChart = new Chart(ctx, {
         type: 'line',
-
         data: {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           type: 'line',
@@ -1259,7 +1258,7 @@
     var navbars = ['header', 'aside'];
     var hrefSelector = 'a:not([target="_blank"]):not([href^="#"]):not([class^="chosen-single"])';
     var linkElement = navbars.map(element => element + ' ' + hrefSelector).join(', ');
-   
+    
   
   })(jQuery);
 (function ($) {

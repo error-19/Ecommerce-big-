@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CouponController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         $result['data']=Coupon::all();
@@ -39,8 +44,7 @@ class CouponController extends Controller
         
         $request->validate([
             'title'=>'required',
-            'code'=>'required|unique:coupons,code,'.
-            $request->post('id'),   
+            'code'=>'required|unique:coupons,code,'.$request->post('id'),   
             'value'=>'required',
         ]);
 

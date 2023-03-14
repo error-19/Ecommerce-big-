@@ -1,4 +1,4 @@
 <?php
 return [
-    'site_name'=>'LogIn'
+    'site_name'=>'My ECOM'
 ];

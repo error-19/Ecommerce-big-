@@ -8,7 +8,11 @@ use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
-   
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index(Request $request)
     {
         if($request->session()->has('ADMIN_LOGIN')){
@@ -18,6 +22,7 @@ class AdminController extends Controller
         }
         return view('admin.login');
     }
+
     public function auth(Request $request)
     {
         $email=$request->post('email');
@@ -44,7 +49,5 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
-   
 
-    
 }

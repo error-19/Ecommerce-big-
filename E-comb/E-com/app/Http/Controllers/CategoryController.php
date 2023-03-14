@@ -1,7 +1,10 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use App\Models\Category;
 use Illuminate\Http\Request;
+
 class CategoryController extends Controller
 {
     public function index()
@@ -52,12 +55,14 @@ class CategoryController extends Controller
         return redirect('admin/category');
         
     }
-  public function delete(Request $request,$id){
+
+    public function delete(Request $request,$id){
         $model=Category::find($id);
         $model->delete();
         $request->session()->flash('message','Category deleted');
         return redirect('admin/category');
     }
+
     public function status(Request $request,$status,$id){
         $model=Category::find($id);
         $model->status=$status;
@@ -65,6 +70,8 @@ class CategoryController extends Controller
         $request->session()->flash('message','Category status updated');
         return redirect('admin/category');
     }
+
+    
 
     
 }

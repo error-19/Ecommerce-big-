@@ -22,6 +22,7 @@
                         <div class="login-logo">
                             <a href="#">
                             {{Config::get('constants.site_name')}}
+                            
                             </a>
                         </div>
                         <div class="login-form">
@@ -37,13 +38,7 @@
                                 </div>
                                 
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
-                                <div class="social-login-content">
-                                    <div class="social-button">
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">sign in with Token</button>
-                                        <button class="au-btn au-btn--block au-btn--blue2  m-b-20">sign in with twitter</button>
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">sign in with facebook</button>
-                                    </div>
-                                </div>
+                                
                                 <div class="alert alert-danger" role="alert">
                                      {{session('error')}}		
 							    </div>

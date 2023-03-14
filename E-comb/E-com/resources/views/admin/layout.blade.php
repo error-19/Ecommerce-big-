@@ -34,19 +34,19 @@
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
-                    <li class="@yield('dashboard_select')">
+                    <li>
                             <a href="{{url('admin/dashboard')}}">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                        
-                        <li class="@yield('category_select')">
+                        <li>
                             <a href="{{url('admin/category')}}">
-                                <i class="fas fa-list"></i>Category</a>
+                                <i class="fas fa-tachometer-alt"></i>Category</a>
                         </li>
 
-                        <li class="@yield('coupon_select')">
+                        <li>
                             <a href="{{url('admin/coupon')}}">
-                                <i class="fas fa-tag"></i>Coupon</a>
+                                <i class="fas fa-tachometer-alt"></i>Coupon</a>
                         </li>
                     </ul>
                 </div>
@@ -77,6 +77,16 @@
                         <li class="@yield('coupon_select')">
                             <a href="{{url('admin/coupon')}}">
                                 <i class="fas fa-tag"></i>Coupon</a>
+                        </li>
+
+                        <li class="@yield('size_select')">
+                            <a href="{{url('admin/size')}}">
+                                <i class="fas fa-window-maximize"></i>Size</a>
+                        </li>
+
+                        <li class="@yield('color_select')">
+                            <a href="{{url('admin/color')}}">
+                            <i class="fas fa-paint-roller"></i>Color</a>
                         </li>
                     </ul>
                 </nav>
